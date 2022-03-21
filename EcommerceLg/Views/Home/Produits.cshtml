@@ -1,0 +1,121 @@
+﻿@using EcommerceLg.Models.ViewSubAndProduit 
+
+
+@model SubCategorieProduit
+
+
+
+
+<section class="m-5">
+
+
+    
+   
+<div class="container-fluid">
+    <div class="row">
+
+
+    <div class="col-lg-2 col-md-0 col-xd-0 border border-2 rounded border-primary">
+       <ul class="list-group mt-2 ">
+
+           @foreach (var item in Model.subCategories)
+          {
+              @* <li class="list-group-item"> <a  class="text text-primary">@item.Name </a></li>*@
+
+               <li class="list-group-item">@Html.ActionLink(@item.Name,"Produits")</li>
+          }
+
+         
+       @*   <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>*@
+
+          <partial name="Bar" />
+
+
+
+        </ul>
+    </div>
+
+
+    
+
+
+ <div class="col-lg-10 col-md-6 col-xd-12">
+
+      @*  row-cols-1 row-cols-md-3 g-4*@
+
+ <div class="row ">
+
+     @foreach (var item in Model.produits)
+    {
+         <div class="col-lg-3 col-md-4 col-xd-12 mb-4 d-flex" >
+            <div class="card border-primary">
+              <img src="~/2a.jpg" class="card-img-top" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title text-primary">@item.Name</h5>
+                <h4 class="card-title text-danger">@item.Price</h4>
+                <p>@item.description</p>
+              </div>
+            </div>
+          </div>
+    }
+ 
+ 
+
+
+              @* <div class="col-lg-3 col-md-4 col-xd-12 mb-4" >
+                <div class="card border-primary">
+                  <img src="~/2a.jpg" class="card-img-top" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title text-primary">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+               <div class="col-lg-3 col-md-6 col-xd-12 mb-4" >
+                <div class="card border-primary">
+                  <img src="~/2a.jpg" class="card-img-top" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title text-primary">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+
+
+               <div class="col-lg-3 col-md-6 col-xd-12 mb-4">
+                <div class="card border-primary">
+                  <img src="~/2a.jpg" class="card-img-top" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title text-primary">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div> 
+  
+  
+              <div class="col-lg-3 col-md-6 col-xd-12 mb-4">
+                <div class="card border-primary">
+                  <img src="~/2a.jpg" class="card-img-top" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title text-primary">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+            *@
+
+  
+  </div>
+    </div>
+    </div>
+</div>
+ 
+
+</section>

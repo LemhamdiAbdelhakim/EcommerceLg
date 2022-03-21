@@ -1,0 +1,189 @@
+﻿ 
+@model List<Category>
+
+
+<!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center" >
+
+     
+    <div class="container">
+      <h1>Bienvenue Chey Ihssan Noury</h1>
+      @*<h2 style="color:black">Le pharmacien est un professionnel
+          de santé qui intervient dans toutes les étapes de la chaîne du médicament. Le patient a besoin de garanties, de sécurité, d’éthique.
+          Il a besoin d’un pharmacien indépendant.Les pharmacies en ligne, comme toutes les autres pharmacies, 
+              sont soumises à des exigences légales strictes. En Maroc, la vente par 
+              correspondance de médicaments sans prescription n’est possible que pour 
+              les pharmacies de Maroc dûment enregistrées
+      </h2>*@
+      <a asp-action="RendezVous" asp-controller="Home" class="btn-get-started scrollto">Prendre rendez-vous</a>
+    </div>
+  </section><!-- End Hero -->
+
+
+
+
+
+
+
+  <main id="main">
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us" >
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content" @*style="background-color:#8d8df1"*@>
+              <h4>Est-il sûr d’acheter des médicaments en ligne ?</h4>
+              <p>
+            @*  Les pharmacies en ligne, comme toutes les autres pharmacies, 
+              sont soumises à des exigences légales strictes. En Maroc, la vente par 
+              correspondance de médicaments sans prescription n’est possible que pour 
+              les pharmacies de Maroc dûment enregistrées.*@
+              Les pharmacies de vente par correspondance sont donc des pharmacies à 
+              part entière avec des standards de qualité élevés et de nombreux services qui
+              offrent des avantages supplémentaires aux clients : par exemple, commander des 
+              médicaments en ligne quand on ne peut pas sortir de chez soi ou s’il est 
+              difficile de se rendre à la pharmacie.
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+             @* <div class="row">*@
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bxs-first-aid"></i>
+                    <h4>Cas d'urgence</h4>
+                   @* <h4>+212523571005</h4>*@
+                   @* <span style="margin-bottom:10px; color:blue;">+212523571005</span>*@
+                    <p> Obtenez un soutien à tout moment en cas d'urgence. Nous avons introduit le principe de la médecine familiale. Soyez connecté avec nous pour toute urgence</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bxs-phone-outgoing"></i>
+                  
+                    <h4>Rendez-vous en ligne</h4>
+                     <p>
+                           Pouvez-vous lui demander tout ce qu'il veut au téléphone et également prendre rendez-vous
+                    </p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-alarm"></i>
+                    <h4>Horaires d’ouverture</h4>
+                   
+                   @* <p>Aut suscipit aut cum nemo deleniti aut omnis.
+                        Doloribus ut maiores omnis facere</p>*@
+                       
+                        <ul class="w-hours list-unstyled">
+								@*<li class="d-flex justify-content-between">Lu - Ven : <span>9:00 - 20:30</span></li>*@
+								<li class="d-flex justify-content-between">Lundi : <span>9:00 - 20:30</span></li>
+								<li class="d-flex justify-content-between">Mardi : <span>9:00 - 20:30</span></li>
+								<li class="d-flex justify-content-between">Mercredi : <span>9:00 - 20:30</span></li>
+								<li class="d-flex justify-content-between">Jeudi : <span>9:00 - 20:30</span></li>
+								<li class="d-flex justify-content-between">Vendredi : <span>9:00 - 20:30</span></li>
+								<li class="d-flex justify-content-between">Samedi : <span>9:00 - 13:00</span></li>		
+							</ul>
+                            
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+   
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="fas fa-user-md"></i>
+              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Doctors</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="far fa-hospital"></i>
+              <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Departments</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="fas fa-flask"></i>
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Research Labs</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="fas fa-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Awards</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+
+
+
+
+
+
+
+
+
+     <!-- ======= Categories Section ======= -->
+   <section id="services" class="services">
+	<div class="container">
+
+         <div class="section-title">
+          <h2>Catégories</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+		<div class="row">
+
+        @foreach (var item in Model)
+       {
+           
+			 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box m-2" >
+              <div class="icon"><i class="fas fa-heartbeat"></i></div>
+              <h4><a asp-route-id="@item.Id"  asp-action="Produits" asp-controller="Home">@item.Name</a></h4>
+              <p>@item.Description</p>
+            </div>
+          </div>
+       }
+		</div>
+	</div>
+</section>
+
+
+
+
+   
+
+  </main><!-- End #main -->
